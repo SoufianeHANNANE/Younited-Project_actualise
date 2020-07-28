@@ -1,0 +1,87 @@
+describe('Pacs credit ', () =>{
+    let profile = require('../fixtures/Profil_pacs.json')
+    before('connection site test', () =>{
+        cy.visit('https://www.younited-credit.com/')
+        cy.url().should('include', 'younited-credit')
+        cy.get('title').should('contain', 'Le Crédit 100% en Ligne – Réponse en 24h | Younited Credit')
+    })
+    it("loading", () =>{
+        cy.choix_user(profile.projet)
+        cy.buttonClick('CONTINUER')
+    })
+    it('Email', () =>{
+        cy.urlWebSite('/email')
+        cy.pageTitle('Younited Credit')
+        cy.emailUser(profile.identity)
+        cy.get('div ').should('have.class', 'wrapper-input input-wrapper--valid')
+        cy.buttonClick('Voir mon offre personnalisée')
+    })
+    it('family situation', () =>{
+        cy.urlWebSite('/familysituation')
+        cy.pageTitle('Younited Credit')
+        cy.situation_familiale_user(profile.identity)
+        cy.get('[type="checkbox"]')
+            .uncheck({force:true}) 
+        cy.buttonClick('Suite')
+    })
+    it('housing', () =>{
+        cy.urlWebSite('/housing')
+        cy.pageTitle('Younited Credit')
+        cy.situation_user(profile.logement)
+        cy.get('[type="checkbox"]').uncheck({force:true}) 
+        cy.buttonClick('Suite')
+    })
+    it('Professional situation', () =>{
+        cy.urlWebSite('/professionalsituation')
+        cy.pageTitle('Younited Credit')
+        cy.activityCeliba(profile.activityStatus, profile.activity)
+        cy.get('#ISCOMPANYBANKRUPT_FALSE')
+            .check({ force: true })
+            .should('be.checked')
+        cy.buttonClick('Suite')
+    }) 
+        it('Partner Activity Sector Test', () =>{
+            cy.urlWebSite('/partnerprofession')
+            cy.pageTitle('Younited Credit')
+            cy.activite_conjoint_user(profile.activityStatus_partenaire, profile.activity_partenaire)
+            cy.buttonClick('Suite')
+        })
+    it('Incomes', () =>{
+        cy.urlWebSite('/incomes')
+        cy.pageTitle('Younited Credit')
+        cy.revenu_user({
+            "isMariedOrPaced":true
+        }, profile.activity, profile.logement, profile.activity_partenaire)
+        cy.buttonClick('Suite')
+    })
+    it('rent', () =>{
+        cy.urlWebSite('/outcomes')
+        cy.pageTitle('Younited Credit')
+        cy.loyer_User(profile.situation_logement, profile.logement)
+        cy.buttonClick('Suite')
+    })
+    it('Bank', () =>{
+        cy.urlWebSite('/bank')
+        cy.pageTitle('Younited Credit')
+        cy.banque_user(profile.banque)
+        cy.buttonClick('Suite')
+    })
+    it('User Identity', () =>{
+        cy.urlWebSite('/identity')
+        cy.pageTitle('Younited Credit')
+        cy.identity_User_Celib(profile.identity)
+        cy.buttonClick('Suite')
+    })
+    it('Partner Identity ', () =>{
+        cy.urlWebSite('/partneridentity')
+        cy.pageTitle('Younited Credit')
+        cy.identity_Partner(profile.partnerStatus, profile.identity_partenaire)
+        cy.buttonClick('Suite')
+    })
+    it('Contact', () =>{
+        cy.urlWebSite('/contact')
+        cy.pageTitle('Younited Credit')
+        cy.contact( profile.identity)
+        cy.buttonClick('Suite')
+    })
+})

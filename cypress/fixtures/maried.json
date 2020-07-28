@@ -1,0 +1,71 @@
+{
+    "projectSelect": "VACATION",
+   "amount": "3K",
+   "creditMaturit": "M6",
+  
+  
+    "gender" : "#GENDERCODE_M",
+    "MaritalStatus" : "MARRIED", 
+    "lastName": "fabien" ,
+    "firstName": "kacel", 
+    "dateOfBirthdday": "15", 
+    "dateOfBirthmmonth": "06", 
+    "dateOfBirthyyear": "1985", 
+    "address": "3 rue Ducat'", 
+    "postalCode": "33000", 
+    "city" : "3306333000", 
+    "countryZone" : "FR" , 
+    "email" : "soufiane.hannane@gmail.com.com" , 
+    "cellPhoneNumber" : "0769256785", 
+    "phoneNumber" : "0935667698",
+    "childNumberPropal" : "1", 
+  
+    "partnerGender" :"#GENDERCODE_MME",
+    "partnerLastName": "Souka",
+    "partnerMaidenName": "nada",
+    "partnerFirstName": "laila",
+    "partnerdateOfBirthay": "06",
+    "partnerdateOfBirthonth": "09",
+    "partnerdateOfBirthyaer": "1992",
+    "partnerPostalCode" :"33000",
+    "partnerCity" :"3331833600",
+  
+    "activitySector" : "PRIVATE_SECTOR", 
+    "profession" : "ENGINEER", 
+    "contractType" : "CDI",
+    "employedFrommonth" : "04", 
+    "employedFromyear" : "2015",
+    "mainIncome" : "5000", 
+  
+  
+    "partnerActivitySector": "FARMING_SECTOR",
+    "partnerProfession": "FARM_WORKER",
+    "partnerContractType" : "CDI",
+    "partnerEmployedFromMouth" : "06",
+    "partnerEmployedFromYear" : "2016",
+    "coIncome" : "1500",
+      
+    "housingStatusMouth" : "10",
+    "housingStatusYear" : "2006",
+    "housingAssistance" : "0", 
+    "additionalIncome" : "500", 
+    "mortgageAmount" : "200",
+    "childSupportPaymentsAmount" : "0",
+    "childCareExpensesAmount" : "300",
+    "loanCount" : "0" ,
+    "loanAmount" : "500", 
+    "type" :"REFURBISHMENT_WORKS" , 
+  
+    "bankCode" : "CREDIT_MUTUEL", 
+    "bankFromYear" : "2010"
+    
+  
+    
+    
+    
+    
+    
+  
+  
+  }
+  

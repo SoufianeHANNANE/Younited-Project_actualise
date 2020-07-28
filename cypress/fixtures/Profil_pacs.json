@@ -1,0 +1,85 @@
+{
+    "projet":{
+        "projectSelect": "USEDCAR",
+        "amount": "3K",
+        "creditMaturity": "M6"
+    },
+    "identity":{
+        "gender" : "#GENDERCODE_M",
+        "maritalStatus" : "COHABITING", 
+        "lastName": "SOUUU" ,
+        "firstName": "HAAAAAA", 
+        "dateOfBirthDay": "03", 
+        "dateOfBirthMouth": "05", 
+        "dateOfBirthYear": "1991", 
+        "address": "13 RUE DE PARIS", 
+        "postalCode": "33000", 
+        "city" : "3306333000", 
+        "countryZone" : "FR" , 
+        "email" : "soufiane.hannane@gmail.com",
+        "cellPhoneNumber" : "0647659210", 
+        "phoneNumber" : "0567345692",
+        "childNumber" : "1",  
+        "insurance_subscribers" : "YES_NO"
+    },
+    "identity_partenaire":{
+        "partnerGender" :"#GENDERCODE_MLLE",
+        "partnerLastName": "SALINA",
+        "partnerFirstName": "FALINAHA",
+        "partnerDateOfBirthDay": "04",
+        "partnerDateOfBirthMouth": "10",
+        "partnerDateOfBirthYear": "1995",
+        "partnerPostalCode" :"92000",
+        "partnerCity" :"9205092000"
+    },
+    "activity":{
+        "activitySector" : "RETIRED", 
+        "profession" : "RETIRED_FROM_PUBLIC_SECTOR",
+        "pensionFromMouth" : "04", 
+        "pensionFromYear" : "2015",
+        "mainIncome" : "2010" 
+    },
+    "activity_partenaire":{
+        "partnerActivitySector": "RETIRED",
+        "partnerProfession": "RETIRED_FROM_PRIVATE_SECTOR",
+        "partnerPensionFromMouth" : "05", 
+        "partnerPensionFromYear" : "2011",
+        "coIncome" : "3000"
+    },
+    "logement":{
+        "housingStatus" : "LODGING_PROVIDED_BY_PARTNER", 
+        "housingStatusMouth" : "07",
+        "housingStatusYear" : "1996", 
+        "housingAssistance" : "0", 
+        "additionalIncome" : "1000", 
+        "mortgageAmount" : "1300",
+        "rentAmount" : "450",
+        "childSupportPaymentsAmount" : "0",
+        "childCareExpensesAmount" : "200",
+        "loanCount" : "0"
+    },
+    "banque":{
+        "bankCode" : "HSBC", 
+        "bankFromYear" : "2012" 
+    }, 
+     "activityStatus":{
+    
+        "isRetired":true
+    },
+    "activityStatus_partenaire":{
+        "isMariedOrPaced":true, 
+        "isRetired":true
+    },
+    "situation_logement":{
+        "isTenant":true, 
+        "isParent":true,
+         "haveOtherLoan":true
+    },
+    "mariedStatus":{
+        "isMariedOrPaced":true
+    },
+    "partnerStatus":{
+        "isPartner":true
+        
+    }
+}
