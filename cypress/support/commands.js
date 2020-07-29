@@ -274,9 +274,7 @@ Cypress.Commands.add("revenu_user", (mariedStatus, activity, logement, partnerAc
     cy.get('#mainIncome-input').type(activity.mainIncome).should('have.class', 'ng-valid')
     cy.get('#housingAssistance-input').type(logement.housingAssistance).should('have.class', 'ng-valid')
     cy.get('#additionalIncome-input').type(logement.additionalIncome).should('have.class', 'ng-valid')
-    if(mariedStatus.isMariedOrPaced){
-        cy.get('#coIncome-input').type(partnerActivity.coIncome).should('have.class', 'ng-valid')
-    }
+    cy.get('#coIncome-input').type(partnerActivity.coIncome).should('have.class', 'ng-valid')
 })
 Cypress.Commands.add('loyer_User', (situation_logement,logement) => {
     if(situation_logement.isTenant){
